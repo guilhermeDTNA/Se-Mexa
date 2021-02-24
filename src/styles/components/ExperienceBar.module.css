@@ -1,0 +1,31 @@
+.experienceBar{
+	display: flex;
+	align-items: center;
+}
+
+.experienceBar span{
+	font-size: 1rem;
+}
+
+/*> significa pegar todas as tags div que são somente filhas (1 nível abaixo) da class*/
+.experienceBar > div{
+	flex: 1;
+	height: 4px;
+	border-radius: 4px;
+	background: var(--gray-line);
+	margin: 0 1.5rem;
+	position: relative;
+}
+
+.experienceBar > div > div{
+	height: 4px;
+	border-radius: 4px;
+	background: var(--green);
+}
+
+span.currentExperience{
+	position: absolute;
+	top: 12px;
+	/*Trazer o número 50% do seu tamanho para a esquerda*/
+	transform: translateX(-50%);
+}

@@ -1,20 +1,29 @@
-import Head from 'next/head';
 import ExperienceBar from '../components/ExperienceBar';
+import {Profile} from '../components/Profile';
+import {CompletedChallenges} from '../components/CompletedChallenges';
+import styles from '../styles/pages/Home.module.css';
+
 
 export default function Home() {
+
+  /* Insere na head do index.html*/
   return (
-        <div className="container">
+    <div className="styles.container"> 
 
-	<head>
-		  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-	</head>
     
     <ExperienceBar />
 
+    <section>
+      <div>
+        <Profile />
+        <CompletedChallenges />
+      </div>
+
+      <div>
+        
+      </div>
+    </section>
+
     </div>
-  )
+    )
 }
