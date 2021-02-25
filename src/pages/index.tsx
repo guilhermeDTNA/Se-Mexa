@@ -1,6 +1,10 @@
 import ExperienceBar from '../components/ExperienceBar';
 import {Profile} from '../components/Profile';
 import {CompletedChallenges} from '../components/CompletedChallenges';
+import {Countdown} from '../components/Countdown';
+
+import Head from 'next/head';
+
 import styles from '../styles/pages/Home.module.css';
 
 
@@ -10,6 +14,10 @@ export default function Home() {
   return (
     <div className="styles.container"> 
 
+    <Head>
+      <title>Início | Se Mexa</title>
+    </Head>
+
     
     <ExperienceBar />
 
@@ -17,6 +25,7 @@ export default function Home() {
       <div>
         <Profile />
         <CompletedChallenges />
+        <Countdown />
       </div>
 
       <div>
