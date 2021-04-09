@@ -1,6 +1,10 @@
-Este projeto foi criado para acompanhar o desenvolvimento do Moveit, uma aplicação web desenvolvida na semana NLW promovido pela Rocketseat. 
+Este projeto foi criado para acompanhar o desenvolvimento do Moveit, uma aplicação web desenvolvida na semana NLW promovida pela Rocketseat. 
 
-Para executá-lo é necessário ter o Node e o NPM instalados em sua máquina. Também será necessária a instalação de pacotes adicionais do NPM, para isso, rode os seguintes comandos:
+A aplicação consiste em criar ciclos de 25 minutos em que, ao término, o usuário que está utilizando o dispositivo deverá cumprir um desafio gerado pela aplicação. O desafio é relacionado a fazer determinados exercícios para manter a saúde, mesmo enquanto esteja trabalhando ou estudando. A cada desafio gerado o navegador emite uma notificação e, ao completá-lo, o usuário ganha a pontuação referente ao exercício.
+
+À medida que a pessoa ganha pontos de experiência, ela sobe de nível e suas informações ficam armazenadas nos cookies do navegador, para que seus dados não sejam perdidos ao fechar a aplicação ou desligar a máquina. 
+
+É possível executar a aplicação sem necessitar instalá-la em ambiente local ou fazer qualquer alteração no sistema, basta acessar <a href="https://se-mexa-next.herokuapp.com/">este link</a>. Entretanto, você pode configurar a aplicação em sua máquina, sendo necessário ter o Node e o NPM instalados no sistema operacional. Também será necessária a instalação de pacotes adicionais do NPM, para isso, rode os seguintes comandos:
 
 ```console
 $ npm install typescript @types/react @types/react-dom @types/node -D
@@ -14,7 +18,7 @@ $ npm run dev
 
 ```
 
-Caso der o erro: "Error: ENOSPC: System limit for number of file watchers reached", digite os seguintes comandos no terminal (funcional para usuários Linux):
+Caso der o erro: "<i>Error: ENOSPC: System limit for number of file watchers reached</i>", digite os seguintes comandos no terminal (funcional para usuários Linux):
 
 ```console
 $ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
