@@ -10,8 +10,8 @@ export function Countdown (){
 		minutes, seconds, hasFinished, isActive, startCountdown, resetCountdown
 	} = useContext(CountdownContext)
 	//Verifica se existe ao menos 2 caracteres no minutes, caso não tenha, preencherá as casas à esquerda com 0
-	const [minuteLeft, minuteRight] = String(minutes).padStart(2, 0).split('');
-	const [secondLeft, secondRight] = String(seconds).padStart(2, 0).split('');
+	const [minuteLeft, minuteRight] = String(minutes).padStart(2, "0").split('');
+	const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split('');
 
 
 	return(
